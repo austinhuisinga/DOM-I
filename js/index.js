@@ -73,9 +73,9 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   textContentP[3].textContent = siteContent['main-content']['product-content'];
   textContentP[4].textContent = siteContent['main-content']['vision-content'];
 
-    // mid-img
-    let midImg = document.getElementById('middle-img');
-    midImg.src = siteContent['main-content']['middle-img-src'];
+  // mid-img
+  let midImg = document.getElementById('middle-img');
+  midImg.src = siteContent['main-content']['middle-img-src'];
 
   // contact
   let contactH4 = document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
@@ -84,5 +84,19 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   contactP[1].textContent = siteContent['contact']['phone'];
   contactP[2].textContent = siteContent['contact']['email'];
 
+  // footer
   let foot = document.querySelector('footer p').textContent = siteContent['footer']['copyright'];
 
+// Task 3: Add new content
+  const home = document.createElement('a');
+  home.textContent = "Home";
+  document.querySelector('nav').prepend(home);
+  
+  const more = document.createElement('a');
+  more.textContent = "More";
+  document.querySelector('nav').append(more);
+
+  let navLinks = document.querySelectorAll('a');
+  navLinks.forEach(element => {
+    element.style.color = 'green';
+  });
