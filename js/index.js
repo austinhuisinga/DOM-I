@@ -41,38 +41,48 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// nav
-let nav = document.getElementsByTagName('a');
-nav[0].textContent = siteContent['nav']['nav-item-1'];
-nav[1].textContent = siteContent['nav']['nav-item-2'];
-nav[2].textContent = siteContent['nav']['nav-item-3'];
-nav[3].textContent = siteContent['nav']['nav-item-4'];
-nav[4].textContent = siteContent['nav']['nav-item-5'];
-nav[5].textContent = siteContent['nav']['nav-item-6'];
+// selectors
+  // nav
+  let nav = document.getElementsByTagName('a');
+  nav[0].textContent = siteContent['nav']['nav-item-1'];
+  nav[1].textContent = siteContent['nav']['nav-item-2'];
+  nav[2].textContent = siteContent['nav']['nav-item-3'];
+  nav[3].textContent = siteContent['nav']['nav-item-4'];
+  nav[4].textContent = siteContent['nav']['nav-item-5'];
+  nav[5].textContent = siteContent['nav']['nav-item-6'];
 
-// cta
-let headline = document.querySelector('h1').textContent = siteContent['cta']['h1'];
+  // cta
+  let headline = document.querySelector('h1').textContent = siteContent['cta']['h1'];
 
-let butt = document.querySelector('button').textContent = siteContent['cta']['button'];
+  let butt = document.querySelector('button').textContent = siteContent['cta']['button'];
 
-let headImg = document.getElementById('cta-img').src = siteContent['cta']['img-src'];
+  let headImg = document.getElementById('cta-img').src = siteContent['cta']['img-src'];
 
-// main-content
-let textContentH4 = document.querySelectorAll('.text-content h4');
-textContentH4[0].textContent = siteContent['main-content']['features-h4'];
-textContentH4[1].textContent = siteContent['main-content']['about-h4'];
-textContentH4[2].textContent = siteContent['main-content']['services-h4'];
-textContentH4[3].textContent = siteContent['main-content']['product-h4'];
-textContentH4[4].textContent = siteContent['main-content']['vision-h4'];
+  // main-content
+  let textContentH4 = document.querySelectorAll('.text-content h4');
+  textContentH4[0].textContent = siteContent['main-content']['features-h4'];
+  textContentH4[1].textContent = siteContent['main-content']['about-h4'];
+  textContentH4[2].textContent = siteContent['main-content']['services-h4'];
+  textContentH4[3].textContent = siteContent['main-content']['product-h4'];
+  textContentH4[4].textContent = siteContent['main-content']['vision-h4'];
 
-let textContentP = document.querySelectorAll('.text-content p');
-textContentP[0].textContent = siteContent['main-content']['features-content'];
-textContentP[1].textContent = siteContent['main-content']['about-content'];
-textContentP[2].textContent = siteContent['main-content']['services-content'];
-textContentP[3].textContent = siteContent['main-content']['product-content'];
-textContentP[4].textContent = siteContent['main-content']['vision-content'];
+  let textContentP = document.querySelectorAll('.text-content p');
+  textContentP[0].textContent = siteContent['main-content']['features-content'];
+  textContentP[1].textContent = siteContent['main-content']['about-content'];
+  textContentP[2].textContent = siteContent['main-content']['services-content'];
+  textContentP[3].textContent = siteContent['main-content']['product-content'];
+  textContentP[4].textContent = siteContent['main-content']['vision-content'];
 
-  // mid-img
-  let midImg = document.getElementById('middle-img');
-  midImg.src = siteContent['main-content']['middle-img-src'];
+    // mid-img
+    let midImg = document.getElementById('middle-img');
+    midImg.src = siteContent['main-content']['middle-img-src'];
+
+  // contact
+  let contactH4 = document.querySelector('.contact h4').textContent = siteContent['contact']['contact-h4'];
+  let contactP = document.querySelectorAll('.contact p');
+  contactP[0].textContent = siteContent['contact']['address'];
+  contactP[1].textContent = siteContent['contact']['phone'];
+  contactP[2].textContent = siteContent['contact']['email'];
+
+  let foot = document.querySelector('footer p').textContent = siteContent['footer']['copyright'];
 
