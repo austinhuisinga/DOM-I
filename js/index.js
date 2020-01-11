@@ -100,3 +100,8 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
   navLinks.forEach(element => {
     element.style.color = 'green';
   });
+
+//Stretch
+  textContentH4.forEach(e => {
+    e.style.fontSize = '1.5rem';
+  })
